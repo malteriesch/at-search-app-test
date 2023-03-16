@@ -8,7 +8,7 @@ Assumptions
 * I will use React and typescript for the application
 * The developer has basic knowledge of React and how to fetch APIs
 * The design matches the fairly bare-bone styles of the mock-up. In a real application apply more styling
-* There was a choice between using table and flex elements, I decided for flex to leave room for mobile-friendly design
+* There was a choice between using table and flex elements, I decided for flex for mobile-friendly display
 
 Out of scope - what is not included
 ------------------------------------------------
@@ -16,7 +16,6 @@ Out of scope - what is not included
   * Different languages
   * Results per page
   * Endless scrolling (which can be implemented with the offset and limit api parameters)
-  * Mobile-friendly version - flex instead of tables are used for this implementation - apply media-selectors for mobile-friendly layout
 
 Instructions to developer
 ------------------------------------------------
@@ -38,7 +37,7 @@ Instructions to developer
 * Show a loading indicator
 
 
-Install and run application
+Install and run application locally
 ------------------------------------------------
 Run following commands on the command line:
 
@@ -46,21 +45,28 @@ Run following commands on the command line:
 
 `npm run dev`
 
-You should see something like 
 
-```
+Open a browser window with the specified url, `http://127.0.0.1:8080/` 
 
-> at-search@0.0.0 dev /home/malte/projects/at-search
-> vite
+Run application via docker
+------------------------------------------------
+Run following commands on the command line:
+`make up`
+
+Open a browser window with the specified url, `http://127.0.0.1:8080/` 
+
+Run application via docker
+------------------------------------------------
+Run following command on command line:
+`make up`
+
+Open a browser window with the specified url, `http://127.0.0.1:8080/`
 
 
-  VITE v4.1.4  ready in 697 ms
+Run tests
+------------------------------------------------
+Run following command on one command line:
+`make up`
 
-  ➜  Local:   http://127.0.0.1:5173/
-  ➜  Network: use --host to expose
-  ➜  press h to show help
-
-
-```
-Open a browser window with the specified url, `http://127.0.0.1:5173/` in this case
-
+Then run following command on another command line:
+`make run-tests`
