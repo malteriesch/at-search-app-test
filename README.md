@@ -12,7 +12,6 @@ Assumptions
 
 Out of scope - what is not included
 ------------------------------------------------
-* Tests
 * Search options for 
   * Different languages
   * Results per page

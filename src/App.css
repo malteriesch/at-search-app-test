@@ -54,3 +54,46 @@ section header {
 .destination {
   flex: 0.5;
 }
+
+label {
+  padding-top: 0.5em;
+  display: block;
+}
+
+
+#messages{
+  padding:1em;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    display: none;
+  }
+
+  #results {
+    border: 0;
+  }
+
+  .col {
+    border: 0;
+  }
+  #search-row {
+    flex-direction: column;
+    width:10em;
+  }
+  .col  {
+    padding:0;
+    width:10em;
+  }
+  .row {
+    flex-direction: column;
+    padding: 1em 1em 1em 0;
+  }
+  .destination {
+    padding-top: 1em;
+  }
+  .image {
+    flex: 0.3;
+  }
+}
+
